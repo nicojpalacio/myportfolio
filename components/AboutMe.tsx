@@ -84,7 +84,7 @@ const AboutMe = () => {
                         ]}
                         wrapper="span"
                         speed={50}
-                        repeat={3}
+                        repeat={Infinity}
                         style={{ display: 'inline-block' }}
                     />
                 </h1>

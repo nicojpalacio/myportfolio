@@ -4,17 +4,17 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect'
 
 const Hero = () => {
     return (
-        <div className='pb-10 pt-20'>
+        <div className=' pt-20'>
             <div>
                 <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white' />
                 <Spotlight className='hidden md:block top-10 left-full h-[80vh] w-[50vw]' fill='orange' />
                 <Spotlight className='hidden md:block top-28 left-80 h-[80vh] w-[50vw]' fill='red' />
             </div>
-            <div className="h-[28rem] w-full dark:bg-black bg-purple-900 dark:bg-dot-white/[0.3] bg-dot-black/[0.3] flex items-center justify-center absolute top-0 left-0 z-0">
+            <div className="h-[27rem] w-full dark:bg-black bg-purple-900 dark:bg-dot-white/[0.3] bg-dot-black/[0.3] flex items-center justify-center absolute top-0 left-0 z-0">
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-purple-900 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
             </div>
 
-            <div className='flex justify-center  my-20 z-10'>
+            <div className='flex justify-center  my-12 lg:my-20 z-10'>
                 <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
                     
                     
