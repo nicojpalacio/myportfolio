@@ -1,8 +1,6 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
-import logofinca from '@/public/logofinca.jpg'
-import Image from 'next/image'
 
 const Hero = () => {
     return (
