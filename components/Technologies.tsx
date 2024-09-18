@@ -4,7 +4,7 @@ import { DiMongodb } from "react-icons/di";
 import { FaCss3, FaHtml5, FaReact, FaJsSquare, FaNode } from "react-icons/fa"
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiStrapi } from "react-icons/si";
-import React, { memo } from 'react';
+
 import { motion } from 'framer-motion'
 
 const iconVariants = (duration: number) => ({
@@ -20,7 +20,7 @@ const iconVariants = (duration: number) => ({
     }
 })
 
-const Technologies = memo(() => {
+const Technologies =() => {
     return (
         <div className=" border-b pb-24">
             <motion.h1 
@@ -115,6 +115,6 @@ const Technologies = memo(() => {
             </motion.div>
         </div>
     )
-})
+}
 
 export default Technologies
