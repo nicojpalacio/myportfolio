@@ -21,7 +21,28 @@ export const metadata: Metadata = {
     shortcut: "/fotoperfilsinfondo.ico", // (opcional) icono de acceso directo
     apple: "//fotoperfilsinfondo.ico", // (opcional) icono de Apple Touch
   },
+  openGraph: {
+    title: "Nicolas Palacio - Portfolio",
+    description: "Desarrollador Frontend apasionado por la creación de aplicaciones web.",
+    url: "https://nicojpalacio.vercel.app/", // Cambia esto por tu URL
+    images: [
+      {
+        url: "/fotoperfilsinfondo.ico", // La ruta a la imagen de la miniatura
+        width: 800,
+        height: 600,
+        alt: "Nicolas Palacio - Portfolio",
+      },
+    ],
+    siteName: "Nicolas Palacio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nicolas Palacio - Portfolio",
+    description: "Desarrollador Frontend apasionado por la creación de aplicaciones web.",
+    images: ["/fotoperfilsinfondo.ico"], // La misma imagen para Twitter
+  },
 };
+
 
 export default function RootLayout({
   children,
