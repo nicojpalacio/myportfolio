@@ -8,18 +8,18 @@ const AboutMe = () => {
     return (
         <section className='flex flex-col justify-start sm:flex-row items-center '>
             {/* Imagen arriba del h1 en mobile y a la par en desktop */}
-            <motion.div 
-            initial={{opacity:0}}
-            animate={{
-                opacity:1,
-                transition:{delay:1, duration:0.4, ease:'easeIn'}
-            }}
-            className='relative p-5 sm:mb-0 sm:mr-8'>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{
+                    opacity: 1,
+                    transition: { delay: 1, duration: 0.4, ease: 'easeIn' }
+                }}
+                className='relative p-5 sm:mb-0 sm:mr-8'>
                 <motion.div
-                    initial={{opacity:0}}
+                    initial={{ opacity: 0 }}
                     animate={{
-                        opacity:1,
-                        transition:{delay:1.2, duration:0.4, ease:'easeInOut'}
+                        opacity: 1,
+                        transition: { delay: 1.2, duration: 0.4, ease: 'easeInOut' }
                     }}
                 >
                     <Image
@@ -37,30 +37,30 @@ const AboutMe = () => {
                     viewBox='0 0 500 500'
                     xmlns='http://www.w3.org/2000/svg'
                     fill='transparent'
-                    /* animate={{ rotate: 360 }}
-                    transition={{
-                        duration: 20,
-                        ease: 'linear',
-                        repeat: Infinity,
-                    }} */
+                /* animate={{ rotate: 360 }}
+                transition={{
+                    duration: 20,
+                    ease: 'linear',
+                    repeat: Infinity,
+                }} */
                 >
                     <motion.circle
                         cx='250'
                         cy='250'
                         r='200'
-                        stroke='rgb(236 72 153)'
+                        stroke='pink'
                         strokeWidth='4'
                         strokeDasharray='round'
                         strokeLinecap='round'
-                        initial={{strokeDasharray:'24 10 0 0'}}
+                        initial={{ strokeDasharray: '24 10 0 0' }}
                         animate={{
                             strokeDasharray: ['15 120 25 25', '16 25 92 72', '4 250 22 22'],
-                            rotate:[120,360]
+                            rotate: [120, 360]
                         }}
                         transition={{
-                            duration:5,
-                            repeat:Infinity,
-                            repeatType:'reverse'
+                            duration: 5,
+                            repeat: Infinity,
+                            repeatType: 'reverse'
                         }}
                         fill='transparent'
                     />
@@ -88,7 +88,8 @@ const AboutMe = () => {
                         style={{ display: 'inline-block' }}
                     />
                 </h1>
-            </div>
+            </div> 
+                
         </section>
     )
 }
