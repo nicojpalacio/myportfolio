@@ -7,6 +7,7 @@ import { SiStrapi } from "react-icons/si";
 
 import { motion } from 'framer-motion'
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { TypeAnimation } from "react-type-animation";
 
 const iconVariants = (duration: number) => ({
     initial: { y: -10 },
@@ -26,16 +27,89 @@ const Technologies = () => {
         <div className=" border-b pb-24">
             <div >
             <TextGenerateEffect
-                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-3xl'
-                        words='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet veritatis ipsum possimus. Doloremque minus unde alias laboriosam, nesciunt consectetur molestias nostrum beatae quod, quibusdam expedita facere necessitatibus dolores illum perferendis.'
+                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
+                        words='Tengo 31 años y soy un desarrolador apasionado por la creación de aplicaciones web intuitivas y centradas en el usuario. Con disponibilidad full-time y movilidad propia, estoy listo para enfrentar nuevos desafíos y colaborar en proyectos emocionantes que empujen los límites del desarrollo web moderno.' 
+                        
                     />
+                    
             </div>
+            
+            {/* <div >
+            <TextGenerateEffect
+                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
+                        words='Soy Nicolás Palacio, un Desarrollador Frontend apasionado por la creación de aplicaciones web intuitivas y centradas en el usuario.' 
+                        
+                    />
+                    
+            </div>
+            <div >
+            <TextGenerateEffect
+                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
+                        words='Mi trayectoria en el desarrollo web está impulsada por un profundo interés en el diseño de interfaces y la integración fluida de tecnologías web modernas.'
+                        
+                    />
+                    
+            </div>
+            <div >
+            <TextGenerateEffect
+                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
+                        words='Me especializo en JavaScript, Next.js y React, y tengo experiencia trabajando con Tailwind CSS y Bootstrap para crear interfaces responsivas y visualmente atractivas.'
+                        
+                    />
+                    
+            </div>
+            <div >
+            <TextGenerateEffect
+                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
+                        words='Recientemente, desarrollé una aplicación para la reserva de habitaciones de un hotel, donde fui responsable tanto del frontend como del backend.'
+                        
+                    />
+                    
+            </div>
+            <div >
+            <TextGenerateEffect
+                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
+                        words='Este proyecto me permitió demostrar mis habilidades en la creación de soluciones full-stack, combinando mi experiencia en React en el frontend y MongoDB y Express.js en el backend.'
+                        
+                    />
+                    
+            </div>
+            <div >
+            <TextGenerateEffect
+                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
+                        words='Anteriormente, también construí una aplicación web impulsada por inteligencia artificial que genera rutinas de gimnasio personalizadas utilizando la API de OpenAI.'
+                        
+                    />
+                    
+            </div>
+            <div >
+            <TextGenerateEffect
+                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
+                        words='Esta experiencia me permitió trabajar con integración de IA y mantener un enfoque centrado en el usuario, implementando mejoras continuas basadas en el feedback de los usuarios y clientes. Con disponibilidad full-time y movilidad propia, estoy listo para enfrentar nuevos desafíos y colaborar en proyectos emocionantes que empujen los límites del desarrollo web moderno.'
+                        
+                    />
+                    
+            </div> */}
+            {/* <div className="text-white pt-6 mb-4 text-sm sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold text-center">
+            <TypeAnimation
+                        sequence={[
+                            "Soy Nicolás Palacio, un Desarrollador Frontend apasionado por la creación de aplicaciones web intuitivas y centradas en el usuario. Mi trayectoria en el desarrollo web está impulsada por un profundo interés en el diseño de interfaces y la integración fluida de tecnologías web modernas. Me especializo en JavaScript, Next.js y React, y tengo experiencia trabajando con Tailwind CSS y Bootstrap para crear interfaces responsivas y visualmente atractivas. Recientemente, desarrollé una aplicación para la reserva de habitaciones de un hotel, donde fui responsable tanto del frontend como del backend. Este proyecto me permitió demostrar mis habilidades en la creación de soluciones full-stack, combinando mi experiencia en React en el frontend y MongoDB y Express.js en el backend. Anteriormente, también construí una aplicación web impulsada por inteligencia artificial que genera rutinas de gimnasio personalizadas utilizando la API de OpenAI. Esta experiencia me permitió trabajar con integración de IA y mantener un enfoque centrado en el usuario, implementando mejoras continuas basadas en el feedback de los usuarios y clientes. Con disponibilidad full-time y movilidad propia, estoy listo para enfrentar nuevos desafíos y colaborar en proyectos emocionantes que empujen los límites del desarrollo web moderno.",
+                            1000
+                            
+                        ]}
+                        wrapper="span"
+                        speed={70}
+                        repeat={Infinity}
+                        style={{ display: 'inline-block' }}
+                    />
+            </div> */}
             
             <motion.h1
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.5 }}
                 className="text-center  m-10 text-blue-100 text-3xl sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold"
+                id="technologies"
             >
                 Tecnologias
             </motion.h1>

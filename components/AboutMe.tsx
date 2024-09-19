@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const AboutMe = () => {
     return (
-        <section className='flex flex-col justify-start sm:flex-row items-center '>
+        <section className='flex flex-col justify-start sm:flex-row items-center ' id="about">
             {/* Imagen arriba del h1 en mobile y a la par en desktop */}
             <motion.div
                 initial={{ opacity: 0 }}
@@ -68,7 +68,7 @@ const AboutMe = () => {
             </motion.div>
 
             <div className='flex flex-col items-center text-center sm:text-left'>
-                <h1 className='text-white pt-6 mb-4 text-3xl sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold z-10'>
+                <h1 className='text-white pt-6 mb-4 text-2xl sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold z-10'>
                     <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500'>
                         Hola, mi nombre es Nicolas Palacio{" "}
                     </span>
