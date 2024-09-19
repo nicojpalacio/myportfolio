@@ -7,7 +7,7 @@ import { SiStrapi } from "react-icons/si";
 
 import { motion } from 'framer-motion'
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import { TypeAnimation } from "react-type-animation";
+
 
 const iconVariants = (duration: number) => ({
     initial: { y: -10 },
