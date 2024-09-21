@@ -10,9 +10,9 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 
 const iconVariants = (duration: number) => ({
-    initial: { y: -10 },
+    initial: { y: -5 },
     animate: {
-        y: [10, -10],
+        y: [5, -5],
         transition: {
             duration: duration,
             ease: "linear" as const,
@@ -24,74 +24,15 @@ const iconVariants = (duration: number) => ({
 
 const Technologies = () => {
     return (
-        <div className=" border-b pb-24">
+        <div className="  pb-[20px]">
             <div >
-            <TextGenerateEffect
-                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
-                        words='Tengo 31 años y soy un desarrolador apasionado por la creación de aplicaciones web intuitivas y centradas en el usuario. Con disponibilidad full-time y movilidad propia, estoy listo para enfrentar nuevos desafíos y colaborar en proyectos emocionantes que empujen los límites del desarrollo web moderno.' 
-                        
-                    />
-                    
+                <TextGenerateEffect
+                    className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
+                    words='I am 31 years old and a passionate developer focused on creating intuitive, user-centered web applications. With full-time availability and personal mobility, I am ready to face new challenges and collaborate on exciting projects that push the boundaries of modern web development.'
+
+                />
+
             </div>
-            
-            {/* <div >
-            <TextGenerateEffect
-                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
-                        words='Soy Nicolás Palacio, un Desarrollador Frontend apasionado por la creación de aplicaciones web intuitivas y centradas en el usuario.' 
-                        
-                    />
-                    
-            </div>
-            <div >
-            <TextGenerateEffect
-                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
-                        words='Mi trayectoria en el desarrollo web está impulsada por un profundo interés en el diseño de interfaces y la integración fluida de tecnologías web modernas.'
-                        
-                    />
-                    
-            </div>
-            <div >
-            <TextGenerateEffect
-                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
-                        words='Me especializo en JavaScript, Next.js y React, y tengo experiencia trabajando con Tailwind CSS y Bootstrap para crear interfaces responsivas y visualmente atractivas.'
-                        
-                    />
-                    
-            </div>
-            <div >
-            <TextGenerateEffect
-                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
-                        words='Recientemente, desarrollé una aplicación para la reserva de habitaciones de un hotel, donde fui responsable tanto del frontend como del backend.'
-                        
-                    />
-                    
-            </div>
-            <div >
-            <TextGenerateEffect
-                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
-                        words='Este proyecto me permitió demostrar mis habilidades en la creación de soluciones full-stack, combinando mi experiencia en React en el frontend y MongoDB y Express.js en el backend.'
-                        
-                    />
-                    
-            </div>
-            <div >
-            <TextGenerateEffect
-                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
-                        words='Anteriormente, también construí una aplicación web impulsada por inteligencia artificial que genera rutinas de gimnasio personalizadas utilizando la API de OpenAI.'
-                        
-                    />
-                    
-            </div>
-            <div >
-            <TextGenerateEffect
-                        className='lg:text-left text-center text-[15px] md:text-2xl lg:text-xl'
-                        words='Esta experiencia me permitió trabajar con integración de IA y mantener un enfoque centrado en el usuario, implementando mejoras continuas basadas en el feedback de los usuarios y clientes. Con disponibilidad full-time y movilidad propia, estoy listo para enfrentar nuevos desafíos y colaborar en proyectos emocionantes que empujen los límites del desarrollo web moderno.'
-                        
-                    />
-                    
-            </div> */}
-           
-            
             <motion.h1
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -99,7 +40,7 @@ const Technologies = () => {
                 className="text-center  m-10 text-blue-100 text-3xl sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold"
                 id="technologies"
             >
-                Tecnologias
+                Technologies
             </motion.h1>
             <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -100 }} transition={{ duration: 1.5 }} className="flex flex-wrap items-center justify-center gap-4">
                 <motion.div
@@ -152,18 +93,9 @@ const Technologies = () => {
                     initial='initial'
                     animate='animate'
                     whileHover={{ scale: 1.2 }}
-                    className="rounded-2xl border-4 border-gray-500 p-4 flex flex-col">
+                    className="rounded-2xl border-4 text-white border-gray-500 p-4 flex flex-col">
                     <RiNextjsFill className="text-7xl" />
                     <span className=" text-sm text-center justify-center text-blue-100">Nextjs</span>
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(2.5)}
-                    initial='initial'
-                    animate='animate'
-                    whileHover={{ scale: 1.2 }}
-                    className="rounded-2xl border-4 border-cyan-500 p-4 flex flex-col">
-                    <RiTailwindCssFill className="text-7xl text-cyan-500" />
-                    <span className=" text-sm text-center justify-center text-blue-100">Tailwind</span>
                 </motion.div>
                 <motion.div
                     variants={iconVariants(3.5)}
@@ -173,6 +105,15 @@ const Technologies = () => {
                     className="rounded-2xl border-4 border-green-500 p-4 flex flex-col">
                     <DiMongodb className="text-7xl text-green-500" />
                     <span className=" text-sm text-center justify-center text-blue-100">MongoDb</span>
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(2.5)}
+                    initial='initial'
+                    animate='animate'
+                    whileHover={{ scale: 1.2 }}
+                    className="rounded-2xl border-4 border-cyan-500 p-4 flex flex-col">
+                    <RiTailwindCssFill className="text-7xl text-cyan-500" />
+                    <span className=" text-sm text-center justify-center text-blue-100">Tailwind</span>
                 </motion.div>
                 <motion.div
                     variants={iconVariants(2.5)}
@@ -193,7 +134,7 @@ const Technologies = () => {
                     <span className=" text-sm text-center justify-center text-blue-100">Postgre</span>
                 </motion.div>
             </motion.div>
-            
+
         </div>
     )
 }

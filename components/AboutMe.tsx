@@ -70,16 +70,16 @@ const AboutMe = () => {
             <div className='flex flex-col items-center text-center sm:text-left'>
                 <h1 className='text-white pt-6 mb-4 text-2xl sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold z-10'>
                     <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500'>
-                        Hola, mi nombre es Nicolas Palacio{" "}
+                        Hi, my name is Nicolas Palacio{" "}
                     </span>
                     <br />
                     <TypeAnimation
                         sequence={[
-                            "Desarrollador Frontend",
+                            "Frontend Developer",
                             1000,
-                            "Desarrollador Backend",
+                            "Backend Developer",
                             1000,
-                            "Diseñador UI/UX",
+                            "UI/UX Designer",
                             1000,
                         ]}
                         wrapper="span"

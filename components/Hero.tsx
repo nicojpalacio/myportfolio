@@ -19,7 +19,7 @@ const Hero = () => {
                     
                     
                     <h2 className='tracking-widest text-xs text-center text-blue-100 max-w-80'>
-                        Porfolio desarrollado con Next.js
+                    Portfolio developed with Next.js
                     </h2>
                     <TextGenerateEffect
                         className='text-center text-[40px] md:text-5xl lg:text-6xl'
@@ -37,7 +37,7 @@ const Hero = () => {
                     </div> */}
                     <button className='relative px-6 py-3 mt-5 w-full sm:w-fit rounded-full text-white cursor-pointer z-0 overflow-hidden group'>
                         <span className='absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-full group-hover:from-pink-500 group-hover:via-purple-500 group-hover:to-blue-500'></span>
-                        <span className='relative z-10'>Descarga mi CV</span>
+                        <span className='relative z-10'>Download CV</span>
                     </button>
 
 

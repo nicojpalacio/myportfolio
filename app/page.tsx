@@ -2,15 +2,15 @@ import AboutMe from "@/components/AboutMe";
 import Hero from "@/components/Hero";
 import Technologies from "@/components/Technologies";
 import { FloatingNav } from "@/components/ui/FloatingNav";
-
+import Projects from "@/components/Projects"
 
 export default function Home() {
   const navItems = [
-    
-    { name: "Sobre Mi", link: "#about"  },
-    { name: "Tecnologias", link: "#technologies" },
-    { name: "Proyectos", link: "#testimonials" },
-    { name: "Contacto", link: "#contacto" },
+
+    { name: "About Me", link: "#about" },
+    { name: "Technologies", link: "#technologies" },
+    { name: "Projects", link: "#projects" },
+    { name: "Contact", link: "#contact" },
   ];
 
   return (
@@ -26,6 +26,10 @@ export default function Home() {
         <div className="container mx-auto px-8">
           <Technologies />
         </div>
+      </div>
+      
+      <div className="mx-auto px-12 py-4 bg-[#121212]" >
+        <Projects />
       </div>
     </main>
   );
