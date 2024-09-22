@@ -15,25 +15,25 @@ const projectsData: ProjectData[] = [
   {
     id: 1,
     title: "Hotel reservation Website",
-    description: 'Web disigned with nextjs and strapi',
+    description: 'Web disigned with nextjs and strapi for room reservations',
     image: "/capturafincalasvinas.png"
   },
   {
     id: 2,
-    title: "Hotel reservation Websites",
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing.',
+    title: "Portfolio Website",
+    description: 'Modern animated portfolio',
     image: "/capturaportfolio.png"
   },
   {
     id: 3,
-    title: "Hotel reservation Website",
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing.',
+    title: "Website invitation",
+    description: `Birthday's invitaion`,
     image: "/capturainvitacion.png"
   },
   {
     id: 4,
-    title: "Hotel reservation Website",
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing.',
+    title: "Gym Ai routine",
+    description: 'Website to generate gym routines',
     image: "/capturagym.png"
   }
 ];
@@ -55,7 +55,7 @@ const Projects: React.FC = () => {
       
           <motion.h2
             className="text-center  m-10 text-blue-100 text-3xl sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold"
-            initial={{ opacity: 0, y: -50 }}
+            initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
             id="projects"

@@ -4,6 +4,7 @@ import Technologies from "@/components/Technologies";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Projects from "@/components/Projects"
 import "@/components/projects.css"
+import ContactMe from "@/components/ContactMe";
 
 export default function Home() {
   const navItems = [
@@ -32,7 +33,10 @@ export default function Home() {
       
       <div className="mx-auto px-12 py-4 bg-[#121212]" >
         <Projects />
+      <ContactMe/>
       </div>
+      
+      
     </main>
   );
 }
