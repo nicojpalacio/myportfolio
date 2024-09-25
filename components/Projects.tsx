@@ -9,6 +9,8 @@ interface ProjectData {
   title: string;
   description: string;
   image: string;
+  gitUrl: string;
+  previewUrl:string
 }
 
 const projectsData: ProjectData[] = [
@@ -16,25 +18,33 @@ const projectsData: ProjectData[] = [
     id: 1,
     title: "Hotel reservation Website",
     description: 'Web disigned with nextjs and strapi for room reservations',
-    image: "/capturafincalasvinas.png"
+    image: "/capturafincalasvinas.png",
+    gitUrl:"",
+    previewUrl:"https://fincadelasvinas.vercel.app/"
   },
   {
     id: 2,
     title: "Portfolio Website",
     description: 'Modern animated portfolio',
-    image: "/capturaportfolio.png"
+    image: "/capturaportfolio.png",
+    gitUrl:"",
+    previewUrl:"https://nicojpalacio.vercel.app/"
   },
   {
     id: 3,
     title: "Website invitation",
     description: `Birthday's invitaion`,
-    image: "/capturainvitacion.png"
+    image: "/capturainvitacion.png",
+    gitUrl:"",
+    previewUrl:"https://cumple-clarita.vercel.app/"
   },
   {
     id: 4,
     title: "Gym Ai routine",
     description: 'Website to generate gym routines',
-    image: "/capturagym.png"
+    image: "/capturagym.png",
+    gitUrl:"",
+    previewUrl:""
   }
 ];
 
@@ -78,8 +88,8 @@ const Projects: React.FC = () => {
                   title={project.title}
                   description={project.description}
                   imgUrl={project.image}
-                /* gitUrl={project.gitUrl}
-                previewUrl={project.previewUrl} */
+                  gitUrl={project.gitUrl}
+                  previewUrl={project.previewUrl}
                 />
               </motion.li>
             ))}

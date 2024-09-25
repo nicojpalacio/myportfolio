@@ -9,9 +9,11 @@ interface ProjectCardProps {
   imgUrl: string;
   title: string;
   description: string;
+  gitUrl:string;
+  previewUrl:string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, description }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
 
   useEffect(() => {
     console.log("Image URL:", imgUrl); // Verifica que la URL de la imagen se envíe correctamente
@@ -31,8 +33,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, description })
           <HiCodeBracket className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
         </Link>
         <Link
-          href=''
+          href={previewUrl}
           className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+          target='_bank'
         >
           <FaEye className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
         </Link>

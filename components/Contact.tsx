@@ -51,8 +51,9 @@ export default function ContactMe() {
       id="contact"
       className="flex items-center justify-center bg-[#121212] mt-10 mb-5 w-full"
     >
-      <div className="w-full max-w-4xl p-8 space-y-8 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-2xl shadow-2xl">
-        <h2 className="text-3xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">Contact Me</h2>
+      
+      <div className=" w-full max-w-4xl p-8 space-y-8 bg-opacity-50 backdrop-filter border border-3xl border-purple backdrop-blur-lg rounded-2xl shadow-2xl">
+        <h2 className="text-3xl text-center font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">Contact Me</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="md:flex md:space-x-6">
             <div className="md:w-1/2 space-y-6">
@@ -113,6 +114,8 @@ export default function ContactMe() {
           <p className="text-red-400 text-center">Failed to send message. Please try again.</p>
         )}
       </div>
+      
     </motion.div>
   )
 }
+
