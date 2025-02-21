@@ -20,7 +20,7 @@ const projectsData: ProjectData[] = [
     description: 'Web disigned with nextjs and strapi for room reservations',
     image: "/capturafincalasvinas.png",
     gitUrl:"",
-    previewUrl:"https://fincadelasvinas.vercel.app/"
+    previewUrl:"https://fincavinasdelchanar.vercel.app/"
   },
   {
     id: 2,
@@ -45,6 +45,15 @@ const projectsData: ProjectData[] = [
     image: "/capturagym.png",
     gitUrl:"",
     previewUrl:""
+  }
+  ,
+  {
+    id: 5,
+    title: "Community Website",
+    description: 'My Community website',
+    image: "/community.png",
+    gitUrl:"",
+    previewUrl:"https://np-communitymanager.vercel.app/"
   }
 ];
 
